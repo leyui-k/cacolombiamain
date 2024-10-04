@@ -29,5 +29,5 @@ app.get('/avatar/:userId', async (req, res) => {
 });
 
 app.listen(3000, () => {
-    console.log('Proxy server running on port 3000');
+    console.log('Proxy server running on port 3000; Code made by leyui');
 });
