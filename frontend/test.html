@@ -11,65 +11,88 @@
 </head>
 <body>
     <header>
+        <div class="miembros">
+            <div class="online-indicator"></div>
+            <h2 id="miembros"></h2>
+        </div>
         <h1>CA COLOMBIA</h1>
+
+        <label class="tema">
+            <input type="checkbox" id="halloweenTema">
+            <span class="slider">
+                <img src="assets/img/pumpkin.png" alt="Calabaza" class="pumpkin-icon">
+            </span>
+        </label>  
+
+        <div class="barras-caja">
+            <div class="barras-header" id="accordionHeader">
+                <div class="barras-icon">
+                    <div class="barras"></div>
+                    <div class="barras"></div>
+                    <div class="barras"></div>
+                </div>
+            </div>
+            <div class="barras-contenido" id="accordionContent">
+                <p><a href="https://discord.com/channels/1042099714608345159/1042099719041720397" target="_blank">Dudas</a></p>
+                <p><a href="https://discord.com/channels/1042099714608345159/1042099719041720395" target="_blank">Contacto</a></p>
+            </div>
+        </div>
+
     </header>
-    <banner>
+        
+    <div class="caja-banner">
         <a href="https://discord.gg/cacolombiarp" target="_blank">
-        <img src="assets/img/BANNER4.png" class="tamaño-banner">
-        </a>
-    </banner>
+        <img src="assets/img/BANNER4.png" id="banner"></a>
+    </div>
 
 <!-- Barra navegacion -->
     <nav>
         <ul>
             <li><a href="https://dbcacolombia.discloud.app" target="_blank">
-                <img src="assets/img/ponal.png" alt=""> </a></li>
+                <img src="assets/img/ponal.png" alt="Ponal"> </a></li>
             <li><a href="https://hwaterrr.github.io/CTI/" target="_blank">
-                <img src="assets/img/cti.png" alt=""> </a></li>
+                <img src="assets/img/cti.png" alt="CTI"> </a></li>
             <li><a id="toggleButton">
                 <img src="assets/img/trabajo.png" alt="Cambia trabajos"> </a></li>
-            <li><a href="https://discord.com/channels/1042099714608345159/1042099719041720397" target="_blank">
-                <img src="assets/img/duda.png" alt="Dudas"> </a></li>
             <ti><a href="https://www.youtube.com/@cacolombiarp/videos" target="_blank">
-                <img src="assets/img/Youtube.png" alt=""> </a></ti>
+                <img src="assets/img/Youtube.png" alt="Youtube"> </a></ti>
             <ti><a href="https://www.tiktok.com/@cacolombiarp" target="_blank">
-                <img src="assets/img/titok.png" alt=""> </a></ti>
-            <li><a id="halloween">
-                <img src="assets/img/pumpkin.png" id="disableBatsButton"> </a></li>
+                <img src="assets/img/titok.png" alt="Tiktok"> </a></ti>
         </ul>
     </nav>
 <!-- Barra navegacion final -->
 
 <div class="container-main">
 <main>
+
 <!-- Eventos -->
-    <section id="evento">
-        <div class="caja-evento">
+    <div class="caja-evento">
+        <section id="evento">
             <h2>EVENTOS</h2>
             <h2><mini>Basado en el canal de eventos</mini></h2>
-                <div class="evento">
-                    <h3>CA TOUR</h3>
-                    <p>Fecha: 12 de Octubre</p>
-                    <img href="" src="assets/img/catour.jpg" alt="">
-                    <p>A lo largo de los meses se haran diferentes conciertos musicales, así como premios, etc.</p>
-                    <a href="https://discord.com/channels/1042099714608345159/1289249525546090496" target="_blank">Más información</a>
-                </div>
-                <div class="evento">
-                    <h3>Proximamente</h3>
-                    <p>Fecha: N/A</p>
-                    <p>Proximamente.</p>
-                <!-- <a href="#" style="color: #eed12f; text-decoration: underline;">Más información</a> -->
-                </div>
-                <div class="evento">
-                    <h3>Proximamente</h3>
-                    <p>Fecha: N/A</p>
-                    <p>Proximamente.</p>
-                <!-- <a href="#" style="color: #eed12f; text-decoration: underline;">Más información</a> -->
-                </div>
+            <div class="evento">
+                <h3>CA TOUR</h3>
+                <p>Fecha: 12 de Octubre</p>
+                <img href="" src="assets/img/catour.jpg" alt="">
+                <p>A lo largo de los meses se haran diferentes conciertos musicales, así como premios, etc.</p>
+                <a href="https://discord.com/channels/1042099714608345159/1289249525546090496" target="_blank">Más información</a>
+            </div>
+            <div class="evento">
+                <h3>Proximamente</h3>
+                <p>Fecha: N/A</p>
+                <p>Proximamente.</p>
+            <!-- <a href="#" style="color: #eed12f; text-decoration: underline;">Más información</a> -->
+            </div>
+            <div class="evento">
+                <h3>Proximamente</h3>
+                <p>Fecha: N/A</p>
+                <p>Proximamente.</p>
+            <!-- <a href="#" style="color: #eed12f; text-decoration: underline;">Más información</a> -->
             </div>
         </section>
+    </div>
 <!-- Eventos final -->
-
+ 
 <!-- Empresas -->
     <div id= empresas class="container-empresas hidden">
         <section>
@@ -228,8 +251,7 @@
                     <button onclick="toggleTexto(this)">Leer más</button> <!-- Botón Leer más -->
                     <a href="https://discord.gg/BmrWxPBsqu" target="_blank">Más información</a>
                 </div>
-            </div>
-                     
+            </div>    
         </section>
     </div>
 <!-- Empresa final -->
@@ -297,36 +319,38 @@
 <!-- Trabajos final -->
 
 <!-- Perfiles -->
-<section id="perfiles">
-    <div class="caja-perfil">
-            <div class="perfil" id="seccion1" >
-                <h2>LeYuiKa</h2>
-                <rol>Dev</rol>
-                <a href="https://www.roblox.com/users/312978547/profile" target="_blank">
-                <img id="avatar1" src="" alt="LeYuiKa"></a>
+    <section id="perfiles">
+        <div class="caja-perfil">
+                <div class="perfil" id="seccion1" >
+                    <h2>LeYuiKa</h2>
+                    <rol>Dev</rol>
+                    <a href="https://www.roblox.com/users/312978547/profile" target="_blank">
+                    <img id="avatar1" src="" alt="LeYuiKa"></a>
+                </div>
+                <div class="perfil" id="seccion2">
+                    <h2>Santiago Restrepo</h2>
+                    <rol>Creador</rol>
+                    <a href="https://www.roblox.com/users/1413431128/profile" target="_blank">
+                    <img id="avatar2" src="" alt="Propoli"></a>
+                </div>
+                <div class="perfil" id="seccion3">
+                    <h2>Joses</h2>
+                    <rol>Co-Creador</rol>
+                    <a href="https://www.roblox.com/users/835636047/profile" target="_blank">
+                    <img id="avatar3" src="" alt="Joses"></a>
+                </div>
             </div>
-            <div class="perfil" id="seccion2">
-                <h2>Santiago Restrepo</h2>
-                <rol>Creador</rol>
-                <a href="https://www.roblox.com/users/1413431128/profile" target="_blank">
-                <img id="avatar2" src="" alt="Propoli"></a>
-            </div>
-            <div class="perfil" id="seccion3">
-                <h2>Joses</h2>
-                <rol>Co-Creador</rol>
-                <a href="https://www.roblox.com/users/835636047/profile" target="_blank">
-                <img id="avatar3" src="" alt="Joses"></a>
-            </div>
-        </div>
-</section>
+    </section>
 <!-- Perfiles final -->
+
 </main>
 </div>
 
 <footer>
     <p>&copy; Página exclusiva de [CA] Colombia ER:LC</p>
-    <p>&copy; © 2024 CA Colombia | MAIN. Todos los derechos reservados a CA hecho por la desarrolladora leyui</p>
+    <p>&copy; 2024 CA Colombia | MAIN. Todos los derechos reservados a CA hecho por la desarrolladora leyui</p>
 </footer>
+
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="assets/js/avatar.js"></script> 
@@ -334,7 +358,8 @@
 <script src="assets/js/halloween-bats.js"></script> 
 <script src="assets/js/halloweenBats.js"></script> 
 <script src="assets/js/leermas.js"></script> 
-
+<script src="assets/js/miembros.js"></script> 
+<script src="assets/js/barra.js"></script> 
 
 
 </body>
